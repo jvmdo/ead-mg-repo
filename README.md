@@ -1,7 +1,7 @@
 # Repositório do protótipo EAD
 
 Repositório com documentação, projetos e códigos do sistema descrito na monografia entitulada
-"Porteiro eletrônico inteligente para residências: um sistema de hardware e software integrados com acesso remoto por aplicativo conectado à nuvem."
+"Porteiro eletrônico inteligente para residências: um sistema com reconhecimento facial e acesso remoto por aplicativo móvel conectado à nuvem."
 
 
 ## Como acessar
