@@ -7,7 +7,7 @@ Repositório com documentação, projetos e códigos do sistema descrito na mono
 ## Como acessar
 
 Para simplificar, decidi colocar as 3 divisões do sistema em branches diferentes:
-  - *master* contém a documentação; 
+  - *main* contém a documentação; 
   - *app* contém o projeto Flutter e códigos do aplicativo;
   - *hardware* contém o projeto Node-RED do programa embarcado e scripts dos submódulos.
 
