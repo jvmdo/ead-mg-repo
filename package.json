@@ -1,0 +1,12 @@
+{
+    "name": "ead-embedded",
+    "description": "The Electronic Artificial Doorkeeper Node-Red program.",
+    "version": "0.0.1",
+    "dependencies": {},
+    "node-red": {
+        "settings": {
+            "flowFile": "flow.json",
+            "credentialsFile": "flow_cred.json"
+        }
+    }
+}

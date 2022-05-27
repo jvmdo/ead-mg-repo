@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "319494379427",
+    "project_id": "ead-backend",
+    "storage_bucket": "ead-backend.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:319494379427:android:bbb0f0cfd43ad6a5ceec16",
+        "android_client_info": {
+          "package_name": "com.example.ead_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "319494379427-q5au7saqbjtf12jr6a6br6a2pkcci9ch.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpqNfi--T46vy72FslI8bqxtD_FMi76xU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "319494379427-q5au7saqbjtf12jr6a6br6a2pkcci9ch.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

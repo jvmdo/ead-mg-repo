@@ -1,0 +1,5323 @@
+[
+    {
+        "id": "cbe637b8.44a3c8",
+        "type": "tab",
+        "label": "main",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "1c637b11.ff1e85",
+        "type": "tab",
+        "label": "unit tests",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "7607526b.c645ec",
+        "type": "subflow",
+        "name": "Camera",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 100,
+                "y": 280,
+                "wires": [
+                    {
+                        "id": "41fda9cc.f737b8"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 1180,
+                "y": 460,
+                "wires": [
+                    {
+                        "id": "97f10f4a.c3c03",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 1180,
+                "y": 360,
+                "wires": [
+                    {
+                        "id": "1249a605.14655a",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#E9967A",
+        "inputLabels": [
+            "Trigger"
+        ],
+        "outputLabels": [
+            "Cached Image",
+            "Captured Image"
+        ],
+        "icon": "font-awesome/fa-camera-retro",
+        "status": {
+            "x": 1180,
+            "y": 200,
+            "wires": [
+                {
+                    "id": "b17d4012.a37fd",
+                    "port": 0
+                },
+                {
+                    "id": "358ed8f.9932b28",
+                    "port": 0
+                }
+            ]
+        }
+    },
+    {
+        "id": "a70a9601.3cf048",
+        "type": "subflow",
+        "name": "Button",
+        "info": "A button on GPIO PCM 21 that has a when pressed behavior, i.e, it toggles values between 1 and 0.",
+        "category": "",
+        "in": [],
+        "out": [
+            {
+                "x": 680,
+                "y": 140,
+                "wires": [
+                    {
+                        "id": "43f05c43.6104a4",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#E9967A",
+        "outputLabels": [
+            "button"
+        ],
+        "icon": "font-awesome/fa-dot-circle-o",
+        "status": {
+            "x": 1080,
+            "y": 300,
+            "wires": [
+                {
+                    "id": "a930a0f2.91278",
+                    "port": 0
+                },
+                {
+                    "id": "3382d6b0.ca4a9a",
+                    "port": 0
+                }
+            ]
+        }
+    },
+    {
+        "id": "7dd49ccd.ac3464",
+        "type": "subflow",
+        "name": "Motor",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 80,
+                "y": 200,
+                "wires": [
+                    {
+                        "id": "4915a4fe.151dbc"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 1100,
+                "y": 280,
+                "wires": [
+                    {
+                        "id": "87ad121e.43301",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [
+            {
+                "name": "asdf",
+                "type": "str",
+                "value": "www"
+            }
+        ],
+        "meta": {},
+        "color": "#E9967A",
+        "icon": "font-awesome/fa-cogs",
+        "status": {
+            "x": 1100,
+            "y": 220,
+            "wires": [
+                {
+                    "id": "2034dab8.6f4796",
+                    "port": 0
+                },
+                {
+                    "id": "3f9dd063.0f7f1",
+                    "port": 0
+                }
+            ]
+        }
+    },
+    {
+        "id": "45583301.ed706c",
+        "type": "subflow",
+        "name": "LED",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 80,
+                "y": 140,
+                "wires": [
+                    {
+                        "id": "8bc77b07.27f7c8"
+                    }
+                ]
+            }
+        ],
+        "out": [],
+        "env": [],
+        "meta": {},
+        "color": "#E9967A",
+        "icon": "font-awesome/fa-lightbulb-o",
+        "status": {
+            "x": 1080,
+            "y": 320,
+            "wires": [
+                {
+                    "id": "ac7461ef.6e31a",
+                    "port": 0
+                },
+                {
+                    "id": "4016286a.4ef268",
+                    "port": 0
+                },
+                {
+                    "id": "7d7d8db8.943514",
+                    "port": 0
+                }
+            ]
+        }
+    },
+    {
+        "id": "209bbc8c.8ea884",
+        "type": "subflow",
+        "name": "Buzzer",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 80,
+                "y": 140,
+                "wires": [
+                    {
+                        "id": "6e1b0c48.d98db4"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 1020,
+                "y": 200,
+                "wires": [
+                    {
+                        "id": "13f3d90c.a5cab7",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#E9967A",
+        "icon": "font-awesome/fa-bell",
+        "status": {
+            "x": 1020,
+            "y": 140,
+            "wires": [
+                {
+                    "id": "e965d846.edea38",
+                    "port": 0
+                },
+                {
+                    "id": "13f3d90c.a5cab7",
+                    "port": 0
+                }
+            ]
+        }
+    },
+    {
+        "id": "9cdfc198.abfa5",
+        "type": "subflow",
+        "name": "Display",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 80,
+                "y": 220,
+                "wires": [
+                    {
+                        "id": "9fdf8f19.4995d"
+                    }
+                ]
+            }
+        ],
+        "out": [],
+        "env": [],
+        "meta": {},
+        "color": "#E9967A",
+        "icon": "font-awesome/fa-desktop",
+        "status": {
+            "x": 1100,
+            "y": 220,
+            "wires": [
+                {
+                    "id": "ad5275ec.538eb8",
+                    "port": 0
+                },
+                {
+                    "id": "85a54bd3.ad12b8",
+                    "port": 0
+                }
+            ]
+        }
+    },
+    {
+        "id": "60cb58a4.dd0b28",
+        "type": "subflow",
+        "name": "Detect Face",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 100,
+                "y": 180,
+                "wires": [
+                    {
+                        "id": "9eb9ad9e.11471"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 1220,
+                "y": 180,
+                "wires": [
+                    {
+                        "id": "b526ef22.7f373",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#D8BFD8",
+        "icon": "font-awesome/fa-smile-o",
+        "status": {
+            "x": 1220,
+            "y": 360,
+            "wires": [
+                {
+                    "id": "363ed74f.4f7e38",
+                    "port": 0
+                },
+                {
+                    "id": "49cccd0f.5f0d44",
+                    "port": 0
+                },
+                {
+                    "id": "a4590852.33d128",
+                    "port": 0
+                },
+                {
+                    "id": "939cbee4.ab2fe",
+                    "port": 0
+                }
+            ]
+        }
+    },
+    {
+        "id": "8ddbf26d.61d18",
+        "type": "subflow",
+        "name": "Recognize Face",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 80,
+                "y": 180,
+                "wires": [
+                    {
+                        "id": "5fde589a.0688d8"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 1200,
+                "y": 180,
+                "wires": [
+                    {
+                        "id": "5eafb010.8824d",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#D8BFD8",
+        "inputLabels": [
+            "Picture absolute path"
+        ],
+        "outputLabels": [
+            "Person details"
+        ],
+        "icon": "font-awesome/fa-user-circle",
+        "status": {
+            "x": 1200,
+            "y": 360,
+            "wires": [
+                {
+                    "id": "d823231.cf3b0e",
+                    "port": 0
+                },
+                {
+                    "id": "7e66051e.067e9c",
+                    "port": 0
+                },
+                {
+                    "id": "f799f11e.bc0b3",
+                    "port": 0
+                },
+                {
+                    "id": "f274c0ea.9267f",
+                    "port": 0
+                }
+            ]
+        }
+    },
+    {
+        "id": "a75e2c2a.32f8c",
+        "type": "subflow",
+        "name": "Initialize System",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 120,
+                "y": 140,
+                "wires": []
+            }
+        ],
+        "out": [],
+        "env": [],
+        "meta": {},
+        "color": "#DAC4B4"
+    },
+    {
+        "id": "8e64a3bb.4204b",
+        "type": "subflow",
+        "name": "Register New User",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 80,
+                "y": 160,
+                "wires": [
+                    {
+                        "id": "b4218f19.a4841"
+                    },
+                    {
+                        "id": "4bad8845.2848a8"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 1140,
+                "y": 520,
+                "wires": [
+                    {
+                        "id": "c61294cf.9c9068",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DAC4B4",
+        "icon": "font-awesome/fa-user-plus"
+    },
+    {
+        "id": "ac604b1.64772b8",
+        "type": "subflow",
+        "name": "On New User",
+        "info": "",
+        "category": "",
+        "in": [],
+        "out": [
+            {
+                "x": 760,
+                "y": 200,
+                "wires": [
+                    {
+                        "id": "807902f6.97c2d",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#C0DEED",
+        "icon": "node-red-contrib-firebase-data/firebase.png"
+    },
+    {
+        "id": "d687782a.a61bd8",
+        "type": "subflow",
+        "name": "On User Action",
+        "info": "",
+        "category": "",
+        "in": [],
+        "out": [
+            {
+                "x": 1220,
+                "y": 260,
+                "wires": [
+                    {
+                        "id": "259848c3.984d78",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#C0DEED",
+        "icon": "node-red-contrib-firebase-data/firebase.png"
+    },
+    {
+        "id": "52572e6a.4d4a7",
+        "type": "subflow",
+        "name": "Create Notification",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 80,
+                "y": 200,
+                "wires": [
+                    {
+                        "id": "88a29964.12a528"
+                    }
+                ]
+            }
+        ],
+        "out": [],
+        "env": [],
+        "meta": {},
+        "color": "#C0DEED",
+        "icon": "node-red-contrib-firebase-data/firebase.png"
+    },
+    {
+        "id": "2c5ffaaa.012716",
+        "type": "subflow",
+        "name": "Generate Capture URL",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 120,
+                "y": 220,
+                "wires": [
+                    {
+                        "id": "dcf5f2ba.f7945"
+                    }
+                ]
+            }
+        ],
+        "out": [],
+        "env": [],
+        "meta": {},
+        "color": "#C0DEED",
+        "inputLabels": [
+            "Capture name"
+        ],
+        "icon": "node-red-contrib-firebase-data/firebase.png"
+    },
+    {
+        "id": "2380a993.5b5d86",
+        "type": "subflow",
+        "name": "Encode New User Face",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 100,
+                "y": 160,
+                "wires": [
+                    {
+                        "id": "b80e0291.110b7"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 700,
+                "y": 300,
+                "wires": [
+                    {
+                        "id": "1c17cb85.9aab84",
+                        "port": 2
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#D8BFD8",
+        "icon": "font-awesome/fa-address-card"
+    },
+    {
+        "id": "9c39f8bd.2f45b8",
+        "type": "subflow",
+        "name": "Download User Pictures",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 100,
+                "y": 140,
+                "wires": [
+                    {
+                        "id": "678a5b37.c2aa64"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 400,
+                "y": 340,
+                "wires": [
+                    {
+                        "id": "2085eddc.09d522",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#C0DEED",
+        "icon": "node-red-contrib-firebase-data/firebase.png"
+    },
+    {
+        "id": "341fa824.c7c4d8",
+        "type": "subflow",
+        "name": "Mimic Capture",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 120,
+                "y": 260,
+                "wires": [
+                    {
+                        "id": "addda721.2b34f8"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 980,
+                "y": 340,
+                "wires": [
+                    {
+                        "id": "30b0d7f7.84d058",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DAC4B4",
+        "icon": "font-awesome/fa-play-circle"
+    },
+    {
+        "id": "426edb53.067234",
+        "type": "firebase-config",
+        "name": "EAD Backend",
+        "cred": "",
+        "dburl": "",
+        "bucket": ""
+    },
+    {
+        "id": "8112dda6.78669",
+        "type": "firebase admin",
+        "name": "EAD Backend"
+    },
+    {
+        "id": "d786e3cf.ab3b",
+        "type": "firebase-config",
+        "z": "8e64a3bb.4204b",
+        "name": "EAD Backend",
+        "cred": "",
+        "dburl": "",
+        "bucket": ""
+    },
+    {
+        "id": "65c08080.3fdf",
+        "type": "rpi-gpio in",
+        "z": "a70a9601.3cf048",
+        "name": "Button",
+        "pin": "16",
+        "intype": "up",
+        "debounce": "25",
+        "read": true,
+        "x": 190,
+        "y": 140,
+        "wires": [
+            [
+                "43f05c43.6104a4"
+            ]
+        ]
+    },
+    {
+        "id": "43f05c43.6104a4",
+        "type": "function",
+        "z": "a70a9601.3cf048",
+        "name": "Toggle Press",
+        "func": "let ledState = context.get('ledState');\nlet startUp = context.get('startUp');\n\nmsg.topic = 'processing';\n\n// Property not really used. It is set just to\n// avoid the if condition in the Display function\n// msg.action = 'buttonPressed';\n\nif (startUp) {\n    msg.payload = 0;\n    context.set('startUp', false);\n} else {\n    if (msg.payload === 1) {\n        if (ledState === \"off\") {\n            msg.payload = 1;\n            ledState = \"on\";\n        } else {\n            msg.payload = 0;\n            ledState = \"off\";\n    }\n    context.set('ledState', ledState);\n    return msg;\n    } else {\n        msg.payload = 0\n    }\n}\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\ncontext.set('ledState', 'off');\ncontext.set('startUp', true);",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 140,
+        "wires": [
+            [
+                "a930a0f2.91278"
+            ]
+        ]
+    },
+    {
+        "id": "38bd144d.8cf7cc",
+        "type": "comment",
+        "z": "a70a9601.3cf048",
+        "name": "When press",
+        "info": "This button toggles the output 1/0 when pressed",
+        "x": 250,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "b069932c.1dcb4",
+        "type": "subflow:a70a9601.3cf048",
+        "z": "cbe637b8.44a3c8",
+        "name": "",
+        "env": [],
+        "x": 110,
+        "y": 180,
+        "wires": [
+            [
+                "5b0ea1cd.cf3bc",
+                "ec45e070.75b64"
+            ]
+        ]
+    },
+    {
+        "id": "5b0ea1cd.cf3bc",
+        "type": "subflow:7607526b.c645ec",
+        "z": "cbe637b8.44a3c8",
+        "name": "",
+        "env": [],
+        "x": 300,
+        "y": 180,
+        "wires": [
+            [
+                "fd28f002.a8d4c"
+            ],
+            [
+                "f6d3029c.99dff"
+            ]
+        ]
+    },
+    {
+        "id": "d81d7ad9.3e8e08",
+        "type": "change",
+        "z": "cbe637b8.44a3c8",
+        "name": "If score >= 0.9",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "open",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 840,
+        "y": 520,
+        "wires": [
+            [
+                "ade8ea8d.2732c8",
+                "13eb12a9.0f591d",
+                "eb73aa49.040778",
+                "7c5f6619.a82198"
+            ]
+        ]
+    },
+    {
+        "id": "8579e69d.f85078",
+        "type": "change",
+        "z": "cbe637b8.44a3c8",
+        "name": "If score < 0.9",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "not-recognized",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 830,
+        "y": 600,
+        "wires": [
+            [
+                "13eb12a9.0f591d",
+                "eb73aa49.040778",
+                "7c5f6619.a82198"
+            ]
+        ]
+    },
+    {
+        "id": "cef7d3ac.63a8",
+        "type": "function",
+        "z": "7607526b.c645ec",
+        "name": "Cache Image",
+        "func": "global.set('lastTakenPicture', msg.payload);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1070,
+        "y": 740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c6703f28.8d91f",
+        "type": "base64",
+        "z": "7607526b.c645ec",
+        "name": "",
+        "action": "",
+        "property": "payload",
+        "x": 880,
+        "y": 740,
+        "wires": [
+            [
+                "cef7d3ac.63a8"
+            ]
+        ]
+    },
+    {
+        "id": "d253c394.8acf6",
+        "type": "file in",
+        "z": "7607526b.c645ec",
+        "name": "Get stored pic",
+        "filename": "",
+        "format": "",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "x": 680,
+        "y": 740,
+        "wires": [
+            [
+                "c6703f28.8d91f"
+            ]
+        ]
+    },
+    {
+        "id": "41fda9cc.f737b8",
+        "type": "function",
+        "z": "7607526b.c645ec",
+        "name": "Generate Picture Name",
+        "func": "let ts = new Date().getTime().toString();\nlet filename = `pic_${ts.substring(0,7)}_${ts.substring(7)}.jpg`;\n\n// trim to remove the new line character at the end\nmsg.payload = filename.trim();\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 280,
+        "wires": [
+            [
+                "5b8ce208.e48abc",
+                "b17d4012.a37fd"
+            ]
+        ]
+    },
+    {
+        "id": "c021838e.0b297",
+        "type": "delay",
+        "z": "7607526b.c645ec",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "2",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 480,
+        "y": 740,
+        "wires": [
+            [
+                "d253c394.8acf6"
+            ]
+        ]
+    },
+    {
+        "id": "254a73d1.75bfec",
+        "type": "function",
+        "z": "cbe637b8.44a3c8",
+        "name": "Check Recognize Results",
+        "func": "// Cache the person name\nflow.set(\"personName\", msg.payload.person)\n\n// Decides which type of output depending on person authorization\n// 1 - No face detected (treated as unknown)\n// 2 - Face recognized but does not fulfill >90% accuracy (same)\n// 3 - Face recognized (OK)\n\n// 1\nif (msg.payload.person == \"[]\") {\n    return [null, msg];\n} else {\n    // 2\n    if (msg.payload.person[0] == \"Unknown person\") {\n        let person = msg.payload.person[1];\n        if (person == \"Unknown person\" || person == undefined) {\n            return [null, msg];\n        } else {\n            let matches = msg.payload.matches;\n            let samples = msg.payload.samples;\n            let frac = (100*(matches/samples)).toFixed(2);\n            \n            node.warn(`${msg.payload.person[1]} has ${matches} matches out of ${samples} samples, meaning ${frac}% of confidence.`);\n                \n            // return [null, null]; // this output blocks the flow\n            return [null, msg];\n        }\n    } else {\n        // 3\n        return [msg, null];\n    }\n}",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 560,
+        "wires": [
+            [
+                "d81d7ad9.3e8e08"
+            ],
+            [
+                "8579e69d.f85078"
+            ]
+        ]
+    },
+    {
+        "id": "d583af79.84a44",
+        "type": "inject",
+        "z": "1c637b11.ff1e85",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "manual close",
+        "payload": "",
+        "payloadType": "date",
+        "x": 270,
+        "y": 180,
+        "wires": [
+            [
+                "33ae4d46.c6d922"
+            ]
+        ]
+    },
+    {
+        "id": "33ae4d46.c6d922",
+        "type": "subflow:7dd49ccd.ac3464",
+        "z": "1c637b11.ff1e85",
+        "name": "",
+        "env": [],
+        "x": 470,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "159401df.33d2ce",
+        "type": "subflow:a70a9601.3cf048",
+        "z": "1c637b11.ff1e85",
+        "name": "",
+        "x": 190,
+        "y": 240,
+        "wires": [
+            [
+                "463a0c6.a2b88f4"
+            ]
+        ]
+    },
+    {
+        "id": "463a0c6.a2b88f4",
+        "type": "debug",
+        "z": "1c637b11.ff1e85",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 370,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "a930a0f2.91278",
+        "type": "change",
+        "z": "a70a9601.3cf048",
+        "name": "Code: Pressed",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Pressed",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 480,
+        "y": 300,
+        "wires": [
+            [
+                "a47b1137.32e89"
+            ]
+        ]
+    },
+    {
+        "id": "a47b1137.32e89",
+        "type": "delay",
+        "z": "a70a9601.3cf048",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 700,
+        "y": 260,
+        "wires": [
+            [
+                "3382d6b0.ca4a9a"
+            ]
+        ]
+    },
+    {
+        "id": "3382d6b0.ca4a9a",
+        "type": "change",
+        "z": "a70a9601.3cf048",
+        "name": "Code: Empty",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 910,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5b8d455a.47229c",
+        "type": "exec",
+        "z": "45583301.ed706c",
+        "command": "python3",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "true",
+        "timer": "7",
+        "oldrc": false,
+        "name": "LED Script",
+        "x": 510,
+        "y": 220,
+        "wires": [
+            [],
+            [
+                "2ebeb254.e0320e"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "8bc77b07.27f7c8",
+        "type": "function",
+        "z": "45583301.ed706c",
+        "name": "Get path to LED script",
+        "func": "let rootPath = global.get('rootPath');\n\nmsg.payload = rootPath + 'scripts/rgb_led.py ' + msg.topic;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 240,
+        "y": 220,
+        "wires": [
+            [
+                "5b8d455a.47229c",
+                "ac7461ef.6e31a"
+            ]
+        ]
+    },
+    {
+        "id": "5ac55975.7ff638",
+        "type": "subflow:45583301.ed706c",
+        "z": "1c637b11.ff1e85",
+        "name": "",
+        "x": 450,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "280731b8.417cbe",
+        "type": "inject",
+        "z": "1c637b11.ff1e85",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "ignored",
+        "payload": "",
+        "payloadType": "date",
+        "x": 250,
+        "y": 300,
+        "wires": [
+            [
+                "5ac55975.7ff638"
+            ]
+        ]
+    },
+    {
+        "id": "ac7461ef.6e31a",
+        "type": "change",
+        "z": "45583301.ed706c",
+        "name": "Code: On",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "On",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 200,
+        "y": 320,
+        "wires": [
+            [
+                "4bf70d00.38bdf4"
+            ]
+        ]
+    },
+    {
+        "id": "4bf70d00.38bdf4",
+        "type": "delay",
+        "z": "45583301.ed706c",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 380,
+        "y": 360,
+        "wires": [
+            [
+                "7d7d8db8.943514"
+            ]
+        ]
+    },
+    {
+        "id": "7d7d8db8.943514",
+        "type": "change",
+        "z": "45583301.ed706c",
+        "name": "Code: Off",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Off",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 560,
+        "y": 360,
+        "wires": [
+            [
+                "45527d2a.9aa304"
+            ]
+        ]
+    },
+    {
+        "id": "45527d2a.9aa304",
+        "type": "delay",
+        "z": "45583301.ed706c",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 740,
+        "y": 400,
+        "wires": [
+            [
+                "4016286a.4ef268"
+            ]
+        ]
+    },
+    {
+        "id": "4016286a.4ef268",
+        "type": "change",
+        "z": "45583301.ed706c",
+        "name": "Code: Empty",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 930,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2ebeb254.e0320e",
+        "type": "debug",
+        "z": "45583301.ed706c",
+        "name": "LED Script Error",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 760,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "13f3d90c.a5cab7",
+        "type": "exec",
+        "z": "209bbc8c.8ea884",
+        "command": "python3",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "true",
+        "timer": "7",
+        "oldrc": false,
+        "name": "Buzzer Script",
+        "x": 510,
+        "y": 240,
+        "wires": [
+            [
+                "7b829dd0.315974"
+            ],
+            [
+                "1c5b7cc6.1eaac3"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "1c5b7cc6.1eaac3",
+        "type": "debug",
+        "z": "209bbc8c.8ea884",
+        "name": "Buzzer Script Error",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 750,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "6e1b0c48.d98db4",
+        "type": "function",
+        "z": "209bbc8c.8ea884",
+        "name": "Get path to Buzzer script",
+        "func": "let rootPath = global.get('rootPath');\n\nmsg.payload = rootPath + 'scripts/buzzer.py ' + msg.topic;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 250,
+        "y": 240,
+        "wires": [
+            [
+                "13f3d90c.a5cab7"
+            ]
+        ]
+    },
+    {
+        "id": "7b829dd0.315974",
+        "type": "delay",
+        "z": "209bbc8c.8ea884",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 600,
+        "y": 140,
+        "wires": [
+            [
+                "e965d846.edea38"
+            ]
+        ]
+    },
+    {
+        "id": "e965d846.edea38",
+        "type": "change",
+        "z": "209bbc8c.8ea884",
+        "name": "Code: Empty",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 790,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d2b76244.66b78",
+        "type": "inject",
+        "z": "1c637b11.ff1e85",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "alarm",
+        "payload": "",
+        "payloadType": "date",
+        "x": 240,
+        "y": 360,
+        "wires": [
+            [
+                "c96673cf.56f83"
+            ]
+        ]
+    },
+    {
+        "id": "c96673cf.56f83",
+        "type": "subflow:209bbc8c.8ea884",
+        "z": "1c637b11.ff1e85",
+        "name": "",
+        "x": 430,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1249a605.14655a",
+        "type": "camerapi-takephoto",
+        "z": "7607526b.c645ec",
+        "filemode": "1",
+        "filename": "",
+        "filedefpath": "0",
+        "filepath": "",
+        "fileformat": "jpeg",
+        "resolution": "4",
+        "rotation": "0",
+        "fliph": "0",
+        "flipv": "0",
+        "brightness": "50",
+        "contrast": "0",
+        "sharpness": "0",
+        "quality": "99",
+        "imageeffect": "none",
+        "exposuremode": "auto",
+        "iso": "0",
+        "agcwait": "0.25",
+        "led": "0",
+        "awb": "auto",
+        "name": "PiCamera",
+        "x": 820,
+        "y": 360,
+        "wires": [
+            [
+                "358ed8f.9932b28"
+            ]
+        ],
+        "icon": "font-awesome/fa-camera"
+    },
+    {
+        "id": "fff87882.f475e8",
+        "type": "comment",
+        "z": "7607526b.c645ec",
+        "name": "Capture and save pictures",
+        "info": "",
+        "x": 870,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "a330723f.cabcb",
+        "type": "comment",
+        "z": "7607526b.c645ec",
+        "name": "Wait PiCamera process to end",
+        "info": "",
+        "x": 540,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "cc350caf.295f9",
+        "type": "inject",
+        "z": "cbe637b8.44a3c8",
+        "name": "Initial setup",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "manual close",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 40,
+        "wires": [
+            [
+                "bd404c9e.570f4"
+            ]
+        ]
+    },
+    {
+        "id": "5b8ce208.e48abc",
+        "type": "function",
+        "z": "7607526b.c645ec",
+        "name": "Set Picture Parameters",
+        "func": "let rootPath = global.get('rootPath');\n\nlet filePath = rootPath + 'captures/';\nlet fileName = msg.payload;\nlet fileMode = 1;\n\nmsg.filepath = filePath;\nmsg.filename = fileName;\nmsg.filemode = fileMode;\nmsg.payload = filePath + fileName;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 360,
+        "wires": [
+            [
+                "1249a605.14655a",
+                "9ec1dbfc.f0cc38"
+            ]
+        ]
+    },
+    {
+        "id": "c6efc10d.69528",
+        "type": "change",
+        "z": "7607526b.c645ec",
+        "name": "Set Stored Pic Path",
+        "rules": [
+            {
+                "t": "set",
+                "p": "filename",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 470,
+        "y": 660,
+        "wires": [
+            [
+                "c021838e.0b297"
+            ]
+        ]
+    },
+    {
+        "id": "33dc7220.41464e",
+        "type": "inject",
+        "z": "1c637b11.ff1e85",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "alarm",
+        "payload": "",
+        "payloadType": "date",
+        "x": 240,
+        "y": 420,
+        "wires": [
+            [
+                "ae3dc38f.592d8"
+            ]
+        ]
+    },
+    {
+        "id": "85a54bd3.ad12b8",
+        "type": "exec",
+        "z": "9cdfc198.abfa5",
+        "command": "python3",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "true",
+        "timer": "",
+        "oldrc": false,
+        "name": "Display Script",
+        "x": 680,
+        "y": 380,
+        "wires": [
+            [
+                "df5445ff.e170b8"
+            ],
+            [
+                "b891aa8f.8334b8"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "b891aa8f.8334b8",
+        "type": "debug",
+        "z": "9cdfc198.abfa5",
+        "name": "Display Script Error",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 930,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "4f4db8de.4273e8",
+        "type": "function",
+        "z": "9cdfc198.abfa5",
+        "name": "Get path to display script",
+        "func": "let rootPath = global.get('rootPath');\n\nmsg.payload = rootPath + `scripts/display.py ${msg.topic} ${msg.person}`;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 380,
+        "wires": [
+            [
+                "85a54bd3.ad12b8"
+            ]
+        ]
+    },
+    {
+        "id": "ae3dc38f.592d8",
+        "type": "subflow:9cdfc198.abfa5",
+        "z": "1c637b11.ff1e85",
+        "name": "",
+        "env": [],
+        "x": 430,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "df5445ff.e170b8",
+        "type": "delay",
+        "z": "9cdfc198.abfa5",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 660,
+        "y": 300,
+        "wires": [
+            [
+                "ad5275ec.538eb8"
+            ]
+        ]
+    },
+    {
+        "id": "ad5275ec.538eb8",
+        "type": "change",
+        "z": "9cdfc198.abfa5",
+        "name": "Status Code: Empty",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 900,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "52728dce.b9ce14",
+        "type": "exec",
+        "z": "60cb58a4.dd0b28",
+        "command": "python3",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "30",
+        "oldrc": false,
+        "name": "Detect Face Script",
+        "x": 570,
+        "y": 260,
+        "wires": [
+            [
+                "f5f6698a.767d28",
+                "89e5d486.5937b8",
+                "b526ef22.7f373"
+            ],
+            [
+                "d6788545.316d28"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "d6788545.316d28",
+        "type": "debug",
+        "z": "60cb58a4.dd0b28",
+        "name": "Face Script Error",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 830,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "9eb9ad9e.11471",
+        "type": "function",
+        "z": "60cb58a4.dd0b28",
+        "name": "Set Script Parameters",
+        "func": "const rootPath = global.get('rootPath');\n\n// the script to be executed\nconst script = rootPath + 'scripts/detect_face.py';\n\n// No need to set these directories when the script is used\n// by captured pictures. But they do need to be set when\n// the script is used to register new users\nconst picturesPath = rootPath + `pictures/${msg.userId}/`;\nconst storedPath = rootPath + `processed-pictures/${msg.userId}/`;\n\n// set the script arguments using default paths\nlet parameters = `${script} --prefix ppp_ --from pp`\n\n//! the parameters to new users are different\nif (msg.topic == 'new-user') {\n    parameters = `${script} --prefix ${msg.userName} --from ${msg.topic} --path ${picturesPath} --stored ${storedPath}`;\n}\n\nmsg.payload = parameters;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 260,
+        "wires": [
+            [
+                "52728dce.b9ce14",
+                "363ed74f.4f7e38",
+                "bf18ca5.71b6038"
+            ]
+        ]
+    },
+    {
+        "id": "1fa82590.650a7a",
+        "type": "inject",
+        "z": "1c637b11.ff1e85",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 220,
+        "y": 480,
+        "wires": [
+            [
+                "1f99196a.16c227"
+            ]
+        ]
+    },
+    {
+        "id": "1f99196a.16c227",
+        "type": "subflow:60cb58a4.dd0b28",
+        "z": "1c637b11.ff1e85",
+        "name": "",
+        "env": [],
+        "x": 420,
+        "y": 480,
+        "wires": [
+            [
+                "4ad9a820.d0b058"
+            ]
+        ]
+    },
+    {
+        "id": "363ed74f.4f7e38",
+        "type": "change",
+        "z": "60cb58a4.dd0b28",
+        "name": "Status code: Processing",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Processing",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 310,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f5f6698a.767d28",
+        "type": "switch",
+        "z": "60cb58a4.dd0b28",
+        "name": "Select status",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 550,
+        "y": 480,
+        "wires": [
+            [
+                "a4590852.33d128"
+            ],
+            [
+                "49cccd0f.5f0d44"
+            ]
+        ]
+    },
+    {
+        "id": "49cccd0f.5f0d44",
+        "type": "change",
+        "z": "60cb58a4.dd0b28",
+        "name": "Status code: Finished",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Finished",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 800,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a4590852.33d128",
+        "type": "change",
+        "z": "60cb58a4.dd0b28",
+        "name": "Status code: Fail",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Fail",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 790,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "89e5d486.5937b8",
+        "type": "delay",
+        "z": "60cb58a4.dd0b28",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 700,
+        "y": 400,
+        "wires": [
+            [
+                "939cbee4.ab2fe"
+            ]
+        ]
+    },
+    {
+        "id": "939cbee4.ab2fe",
+        "type": "change",
+        "z": "60cb58a4.dd0b28",
+        "name": "Status code: Empty",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 890,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4ad9a820.d0b058",
+        "type": "debug",
+        "z": "1c637b11.ff1e85",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 630,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "f6d3029c.99dff",
+        "type": "subflow:60cb58a4.dd0b28",
+        "z": "cbe637b8.44a3c8",
+        "name": "",
+        "env": [],
+        "x": 370,
+        "y": 300,
+        "wires": [
+            [
+                "cbc369da.8e0dd8"
+            ]
+        ]
+    },
+    {
+        "id": "b17d4012.a37fd",
+        "type": "change",
+        "z": "7607526b.c645ec",
+        "name": "Status code: Capturing",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Capturing",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 360,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "358ed8f.9932b28",
+        "type": "trigger",
+        "z": "7607526b.c645ec",
+        "name": "Status code: Done then Empty",
+        "op1": "Done",
+        "op2": " ",
+        "op1type": "str",
+        "op2type": "str",
+        "duration": "5",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "s",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 830,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cbc369da.8e0dd8",
+        "type": "switch",
+        "z": "cbe637b8.44a3c8",
+        "name": "Check Detect Result",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "no-face",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 620,
+        "y": 300,
+        "wires": [
+            [
+                "461b8f78.7d478",
+                "36cb545c.c1017c"
+            ],
+            [
+                "461b8f78.7d478",
+                "113041af.82fdee",
+                "cfb0b99f.a30398"
+            ]
+        ]
+    },
+    {
+        "id": "461b8f78.7d478",
+        "type": "subflow:9cdfc198.abfa5",
+        "z": "cbe637b8.44a3c8",
+        "name": "",
+        "env": [],
+        "x": 1060,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "36cb545c.c1017c",
+        "type": "subflow:45583301.ed706c",
+        "z": "cbe637b8.44a3c8",
+        "name": "",
+        "env": [],
+        "x": 1050,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "dfe87f45.06954",
+        "type": "comment",
+        "z": "cbe637b8.44a3c8",
+        "name": "No Face / Face Detected Feedback",
+        "info": "",
+        "x": 1140,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "f71e753c.8a8dd8",
+        "type": "comment",
+        "z": "60cb58a4.dd0b28",
+        "name": "It is needed because topic is the scripts args",
+        "info": "Remind, if there is face, the script outputs the absolute path to the processed image; otherwise,\nit outputs 'no-face' string.",
+        "x": 910,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "8db72bb7.727038",
+        "type": "comment",
+        "z": "7607526b.c645ec",
+        "name": "About cache image",
+        "info": "It is not needed.\nThe Image Preview node say nothing about\nthe filename property, but I have found out\nthat this property, if set, it is used over\npayload.",
+        "x": 1090,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "b32db4d7.1c2da8",
+        "type": "inject",
+        "z": "1c637b11.ff1e85",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "/home/pi/.node-red/projects/ead-embedded/processed-images/ppp_24112021_183026.jpg",
+        "payloadType": "str",
+        "x": 210,
+        "y": 540,
+        "wires": [
+            [
+                "fed804ad.f07bb8"
+            ]
+        ]
+    },
+    {
+        "id": "fed804ad.f07bb8",
+        "type": "image viewer",
+        "z": "1c637b11.ff1e85",
+        "name": "",
+        "width": 160,
+        "data": "payload",
+        "dataType": "msg",
+        "active": true,
+        "x": 370,
+        "y": 540,
+        "wires": [
+            [
+                "d22b0105.040eb"
+            ]
+        ]
+    },
+    {
+        "id": "d22b0105.040eb",
+        "type": "debug",
+        "z": "1c637b11.ff1e85",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 570,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "b526ef22.7f373",
+        "type": "function",
+        "z": "60cb58a4.dd0b28",
+        "name": "Set Topic (args)",
+        "func": "\nmsg.topic = msg.payload;\n\nif (msg.topic != 'no-face') {\n    // if there is a face, change script args\n    msg.topic = 'face-detected';\n    // trim to remove the new line character at the end\n    msg.payload = msg.payload.trim()\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 820,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9ec1dbfc.f0cc38",
+        "type": "function",
+        "z": "7607526b.c645ec",
+        "name": "Delete Message Properties",
+        "func": "// Those properties are no needed from this point forward\ndelete msg.filepath;\ndelete msg.filename;\ndelete msg.filemode;\ndelete msg.fileFormat;\ndelete msg.rc;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 640,
+        "y": 460,
+        "wires": [
+            [
+                "97f10f4a.c3c03"
+            ]
+        ]
+    },
+    {
+        "id": "fd28f002.a8d4c",
+        "type": "image viewer",
+        "z": "cbe637b8.44a3c8",
+        "name": "Captured Picture Preview",
+        "width": 160,
+        "data": "payload",
+        "dataType": "msg",
+        "active": true,
+        "x": 630,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "97f10f4a.c3c03",
+        "type": "delay",
+        "z": "7607526b.c645ec",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "2",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 960,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "21289b8d.e423d4",
+        "type": "comment",
+        "z": "7607526b.c645ec",
+        "name": "Wait for saving process to end",
+        "info": "",
+        "x": 1020,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "5fde589a.0688d8",
+        "type": "function",
+        "z": "8ddbf26d.61d18",
+        "name": "Set Script Parameters",
+        "func": "let rootPath = global.get('rootPath');\nlet scriptPath = rootPath + 'scripts/recognize_face.py ';\nlet params = `--image ${msg.payload}`;\n\nlet sheet = scriptPath + params;\nmsg.payload = sheet.trim();\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 260,
+        "y": 260,
+        "wires": [
+            [
+                "e9b94cde.eeb4c",
+                "d823231.cf3b0e"
+            ]
+        ]
+    },
+    {
+        "id": "e9b94cde.eeb4c",
+        "type": "exec",
+        "z": "8ddbf26d.61d18",
+        "command": "python3",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "true",
+        "timer": "10",
+        "oldrc": false,
+        "name": "Recognize Face Script",
+        "x": 520,
+        "y": 260,
+        "wires": [
+            [
+                "73dfe06.9a5c72",
+                "8ab4df3e.b2d8d",
+                "dd9d0945.3a7878"
+            ],
+            [
+                "b77a3cad.ab732"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "dd9d0945.3a7878",
+        "type": "json",
+        "z": "8ddbf26d.61d18",
+        "name": "String to JSON",
+        "property": "payload",
+        "action": "",
+        "pretty": true,
+        "x": 760,
+        "y": 180,
+        "wires": [
+            [
+                "5eafb010.8824d"
+            ]
+        ]
+    },
+    {
+        "id": "5eafb010.8824d",
+        "type": "function",
+        "z": "8ddbf26d.61d18",
+        "name": "Format Person Array",
+        "func": "var personObj;\nvar personArray;\n\nif (msg.payload.person != \"[]\") {\n    personObj = msg.payload.person.split(/[']/);\n    \n    personArray = personObj.filter(\n        function (value, index, arr) { \n            return value.length >= 5;\n        }\n    );\n    \n    msg.payload.person = personArray;\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1000,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b77a3cad.ab732",
+        "type": "debug",
+        "z": "8ddbf26d.61d18",
+        "name": "Recognition Script Error",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 790,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "d823231.cf3b0e",
+        "type": "change",
+        "z": "8ddbf26d.61d18",
+        "name": "Status code: Processing",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Processing",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 310,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8ab4df3e.b2d8d",
+        "type": "switch",
+        "z": "8ddbf26d.61d18",
+        "name": "Select status",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 550,
+        "y": 480,
+        "wires": [
+            [
+                "f799f11e.bc0b3"
+            ],
+            [
+                "f274c0ea.9267f"
+            ]
+        ]
+    },
+    {
+        "id": "f274c0ea.9267f",
+        "type": "change",
+        "z": "8ddbf26d.61d18",
+        "name": "Status code: Finished",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Finished",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 800,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f799f11e.bc0b3",
+        "type": "change",
+        "z": "8ddbf26d.61d18",
+        "name": "Status code: Fail",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Fail",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 790,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "73dfe06.9a5c72",
+        "type": "delay",
+        "z": "8ddbf26d.61d18",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 700,
+        "y": 400,
+        "wires": [
+            [
+                "7e66051e.067e9c"
+            ]
+        ]
+    },
+    {
+        "id": "7e66051e.067e9c",
+        "type": "change",
+        "z": "8ddbf26d.61d18",
+        "name": "Status code: Empty",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 890,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4ab83bdc.74c454",
+        "type": "subflow:8ddbf26d.61d18",
+        "z": "cbe637b8.44a3c8",
+        "name": "",
+        "env": [],
+        "x": 520,
+        "y": 420,
+        "wires": [
+            [
+                "8521db0a.093978",
+                "254a73d1.75bfec"
+            ]
+        ]
+    },
+    {
+        "id": "75a688e.6aa0b78",
+        "type": "inject",
+        "z": "1c637b11.ff1e85",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "/home/pi/.node-red/projects/ead-embedded/processed-images/ppp_24112021_204645.jpg",
+        "payloadType": "str",
+        "x": 210,
+        "y": 600,
+        "wires": [
+            [
+                "aafa9420.78f908"
+            ]
+        ]
+    },
+    {
+        "id": "aafa9420.78f908",
+        "type": "subflow:8ddbf26d.61d18",
+        "z": "1c637b11.ff1e85",
+        "name": "",
+        "x": 400,
+        "y": 600,
+        "wires": [
+            [
+                "674af5b7.7ed75c"
+            ]
+        ]
+    },
+    {
+        "id": "674af5b7.7ed75c",
+        "type": "debug",
+        "z": "1c637b11.ff1e85",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 610,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "2034dab8.6f4796",
+        "type": "exec",
+        "z": "7dd49ccd.ac3464",
+        "command": "python3",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "true",
+        "timer": "",
+        "oldrc": false,
+        "name": "Motor Script",
+        "x": 490,
+        "y": 280,
+        "wires": [
+            [
+                "efadd9.8d234228",
+                "87ad121e.43301"
+            ],
+            [
+                "f284842f.2998c8"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "f284842f.2998c8",
+        "type": "debug",
+        "z": "7dd49ccd.ac3464",
+        "name": "Motor Script Error",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 730,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "4915a4fe.151dbc",
+        "type": "function",
+        "z": "7dd49ccd.ac3464",
+        "name": "Get path to motor script",
+        "func": "let rootPath = global.get('rootPath');\n\n// The toggle door state logic if needed\n\n/*let doorState = global.get('doorState');\n\nif (msg.topic == 'manual') {\n    if (doorState == 'locked') {\n        msg.payload = rootPath + 'scripts/motor.py manual open';\n    } else {\n        msg.payload = rootPath + 'scripts/motor.py manual close';\n    }\n} else {\n    msg.payload = rootPath + 'scripts/motor.py ' + msg.topic;\n}*/\n\n// Maybe add some logic to avoid transitions to same state\n// i.e, if the door is already closed there is no need\n// to close it again\n\nmsg.payload = rootPath + 'scripts/motor.py ' + msg.topic;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 230,
+        "y": 280,
+        "wires": [
+            [
+                "2034dab8.6f4796"
+            ]
+        ]
+    },
+    {
+        "id": "c4071ddf.9ed3e",
+        "type": "function",
+        "z": "a75e2c2a.32f8c",
+        "name": "Initialize Constants",
+        "func": "// All the initialization code is in 'On Start' state.\n",
+        "outputs": 0,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\n\nconst rootPath = '/home/pi/.node-red/projects/ead-embedded/';\nglobal.set('rootPath', rootPath);\n\nconst syscode = '1234-1a2b';\nglobal.set('syscode', syscode);\n\n// const defaultBucket = 'widget-design-tests.appspot.com';\nconst defaultBucket = 'ead-backend.appspot.com';\nglobal.set('defaultBucket', defaultBucket);",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "efadd9.8d234228",
+        "type": "delay",
+        "z": "7dd49ccd.ac3464",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "10",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 700,
+        "y": 200,
+        "wires": [
+            [
+                "3f9dd063.0f7f1"
+            ]
+        ]
+    },
+    {
+        "id": "3f9dd063.0f7f1",
+        "type": "change",
+        "z": "7dd49ccd.ac3464",
+        "name": "Status Code: Empty",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 920,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "87ad121e.43301",
+        "type": "function",
+        "z": "7dd49ccd.ac3464",
+        "name": "Motor Changes Door State",
+        "func": "\nlet state = msg.payload.trim()\n\nif (state == 'Opened') {\n    global.set('doorState', 'Opened');\n} else if (state == 'Locked') {\n    global.set('doorState', 'Locked');\n} else {\n    global.set('doorState', 'Transitioning');\n}\n\nnode.warn(`The door is ${global.get('doorState')}`);\nmsg.payload = state;\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 900,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4caa7ef0.b7e2f",
+        "type": "subflow:7dd49ccd.ac3464",
+        "z": "a75e2c2a.32f8c",
+        "name": "",
+        "x": 350,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c531b0ce.5bfa9",
+        "type": "comment",
+        "z": "a75e2c2a.32f8c",
+        "name": "Ensure the door is locked",
+        "info": "",
+        "x": 410,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "bd404c9e.570f4",
+        "type": "subflow:a75e2c2a.32f8c",
+        "z": "cbe637b8.44a3c8",
+        "name": "",
+        "env": [],
+        "x": 350,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "680092b7.19c3fc",
+        "type": "inject",
+        "z": "1c637b11.ff1e85",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 220,
+        "y": 660,
+        "wires": [
+            [
+                "70d38057.9e10c"
+            ]
+        ]
+    },
+    {
+        "id": "70d38057.9e10c",
+        "type": "link out",
+        "z": "1c637b11.ff1e85",
+        "name": "Link out",
+        "links": [
+            "4674033a.4d157c"
+        ],
+        "x": 330,
+        "y": 660,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "e6195bfd.ae7178",
+        "type": "debug",
+        "z": "1c637b11.ff1e85",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "4674033a.4d157c",
+        "type": "link in",
+        "z": "1c637b11.ff1e85",
+        "name": "Link in",
+        "links": [
+            "70d38057.9e10c"
+        ],
+        "x": 580,
+        "y": 660,
+        "wires": [
+            [
+                "e6195bfd.ae7178"
+            ]
+        ],
+        "l": true
+    },
+    {
+        "id": "ade8ea8d.2732c8",
+        "type": "subflow:7dd49ccd.ac3464",
+        "z": "cbe637b8.44a3c8",
+        "name": "",
+        "env": [],
+        "x": 1050,
+        "y": 480,
+        "wires": [
+            [
+                "ce97f295.bfb7b"
+            ]
+        ]
+    },
+    {
+        "id": "13eb12a9.0f591d",
+        "type": "subflow:45583301.ed706c",
+        "z": "cbe637b8.44a3c8",
+        "name": "",
+        "x": 1050,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "eb73aa49.040778",
+        "type": "subflow:9cdfc198.abfa5",
+        "z": "cbe637b8.44a3c8",
+        "name": "",
+        "x": 1060,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "8521db0a.093978",
+        "type": "debug",
+        "z": "cbe637b8.44a3c8",
+        "name": "Recognition Result",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 770,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "7c5f6619.a82198",
+        "type": "link out",
+        "z": "cbe637b8.44a3c8",
+        "name": "Trigger Notification Creation",
+        "links": [
+            "b58965cb.ca10d8"
+        ],
+        "x": 1120,
+        "y": 700,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "affdfc2c.8f98a",
+        "type": "comment",
+        "z": "cbe637b8.44a3c8",
+        "name": "Not Recognized Feedback",
+        "info": "",
+        "x": 1110,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "7e382188.6f02f",
+        "type": "subflow:9cdfc198.abfa5",
+        "z": "a75e2c2a.32f8c",
+        "name": "",
+        "env": [],
+        "x": 360,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "21b6f02f.317e5",
+        "type": "comment",
+        "z": "a75e2c2a.32f8c",
+        "name": "Ensure the display is idle",
+        "info": "",
+        "x": 410,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "889a66b7.c42308",
+        "type": "subflow:45583301.ed706c",
+        "z": "a75e2c2a.32f8c",
+        "name": "",
+        "x": 350,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "3355bc4b.bd6f14",
+        "type": "comment",
+        "z": "a75e2c2a.32f8c",
+        "name": "Ensure the LED is off",
+        "info": "",
+        "x": 400,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "499c199d.4cb878",
+        "type": "debug",
+        "z": "1c637b11.ff1e85",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 630,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "a48c61b6.9df6",
+        "type": "function",
+        "z": "1c637b11.ff1e85",
+        "name": "Get Firebase App",
+        "func": "let fb = global.get('firebase')\n\nfb.firestore().doc('users/Mxw3zPMFn2pIcdd00TaJ').get().then((ref)=>{\n    let d = ref.data()\n    node.send( {payload: {data: d}});\n})\n\nreturn;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 720,
+        "wires": [
+            [
+                "499c199d.4cb878"
+            ]
+        ]
+    },
+    {
+        "id": "3ff9eead.5529f2",
+        "type": "inject",
+        "z": "1c637b11.ff1e85",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 220,
+        "y": 720,
+        "wires": [
+            [
+                "a48c61b6.9df6"
+            ]
+        ]
+    },
+    {
+        "id": "7c514510.366fbc",
+        "type": "function",
+        "z": "8e64a3bb.4204b",
+        "name": "Write pictures to disk in new user directory",
+        "func": "const rootPath = global.get('rootPath');\n\n// get the pictures buffer\nlet picsBuffer = msg.buffer;\n\n// define the directory where the new user's picture will be stored\nlet dir = rootPath + `pictures/${msg.userId}/`;\n\nfor (let buff of picsBuffer) {\n    // create new directory (it assumes download folder already exists)\n    try {\n        // first check if [dir] already exists\n        if (!fs.existsSync(dir)) {\n            // then creates it\n            fs.mkdirSync(dir);\n        }\n    } catch(e) {\n        node.error(`Create download directory error: ${e}`);\n    }\n    \n    // create a random number as string\n    let rts = Math.floor(Math.random() * Date.now()).toString();\n    // create a unique filename\n    let filename = `${msg.userName}-${rts.substring(0,6)}-${rts.substring(6)}.jpg`;\n    // full directory to the file\n    let filepath = `${dir}/${filename}`;\n    \n    try {\n        // write the picture to disk in the specified directory\n        fs.writeFileSync(filepath, buff);\n    } catch(e) {\n        node.error(`Could not write file to disk: ${err}`);\n    }\n}\n\ndelete msg.buffer;\n\nreturn msg;\n\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "fs",
+                "module": "fs"
+            }
+        ],
+        "x": 580,
+        "y": 340,
+        "wires": [
+            [
+                "6ed7f4c4.4a191c"
+            ]
+        ]
+    },
+    {
+        "id": "66fb8569.f38dbc",
+        "type": "function",
+        "z": "8e64a3bb.4204b",
+        "name": "Get filepath and buffer",
+        "func": "// This function extracts and formats the \n// name and buffer of each picture file\n// returned as result from Bucket query\n\nconst storageData = msg.payload;\n\n// The whole file path, including its name\n// Ex.: users-pictures/<user-id>/<user-name>001.jpg\nlet picturesFilepath = [];\n\n// The file's buffer data \nlet picturesBuffer = [];\n\nfor (var property in storageData) {\n    picturesFilepath.push(property);\n    picturesBuffer.push(storageData[property][0]);\n}\n\nmsg.filepath = picturesFilepath;\nmsg.buffer = picturesBuffer;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 220,
+        "wires": [
+            [
+                "3ca9d414.c82c3c"
+            ]
+        ]
+    },
+    {
+        "id": "3ca9d414.c82c3c",
+        "type": "switch",
+        "z": "8e64a3bb.4204b",
+        "name": "Check Pictures Existance",
+        "property": "buffer[0]",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "null"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 530,
+        "y": 280,
+        "wires": [
+            [
+                "ee96521.8d96ab"
+            ],
+            [
+                "7c514510.366fbc",
+                "13ac4a2d.ebb5e6"
+            ]
+        ]
+    },
+    {
+        "id": "2c642a82.0f6f76",
+        "type": "debug",
+        "z": "8e64a3bb.4204b",
+        "name": "No Buffer Error",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1000,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "6ed7f4c4.4a191c",
+        "type": "function",
+        "z": "8e64a3bb.4204b",
+        "name": "Create directory to new user processed pictures",
+        "func": "const rootPath = global.get('rootPath');\n\n// new user pre-processed pictures directory\nlet ppDir = rootPath + `processed-pictures/${msg.userId}/`;\n\n// create new directory\ntry {\n    // first check if [ppDir] already exists\n    if (!fs.existsSync(ppDir)) {\n        // then creates it\n        fs.mkdirSync(ppDir);\n    }\n} catch (err) {\n    node.error(`Could not create ppDir: ${err}`);\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "fs",
+                "module": "fs"
+            }
+        ],
+        "x": 600,
+        "y": 400,
+        "wires": [
+            [
+                "1f315421.6bd5bc"
+            ]
+        ]
+    },
+    {
+        "id": "1f315421.6bd5bc",
+        "type": "subflow:60cb58a4.dd0b28",
+        "z": "8e64a3bb.4204b",
+        "name": "",
+        "env": [],
+        "x": 910,
+        "y": 400,
+        "wires": [
+            [
+                "c61294cf.9c9068"
+            ]
+        ]
+    },
+    {
+        "id": "ee96521.8d96ab",
+        "type": "change",
+        "z": "8e64a3bb.4204b",
+        "name": "Download Error",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "There is no images buffer. The images will be downloaded again in 15 seconds.",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "complete",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 780,
+        "y": 200,
+        "wires": [
+            [
+                "2c642a82.0f6f76",
+                "4ebba64f.533ee8"
+            ]
+        ]
+    },
+    {
+        "id": "3e922904.a1ccc6",
+        "type": "join",
+        "z": "1c637b11.ff1e85",
+        "name": "",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 490,
+        "y": 800,
+        "wires": [
+            [
+                "5c8ce22f.28c21c"
+            ]
+        ]
+    },
+    {
+        "id": "cdb2b57b.af2438",
+        "type": "inject",
+        "z": "1c637b11.ff1e85",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            },
+            {
+                "p": "complete",
+                "v": "",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "retry",
+        "payload": "",
+        "payloadType": "date",
+        "x": 240,
+        "y": 840,
+        "wires": [
+            [
+                "3e922904.a1ccc6"
+            ]
+        ]
+    },
+    {
+        "id": "6dcffea0.1135e",
+        "type": "inject",
+        "z": "1c637b11.ff1e85",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "new-user",
+        "payload": "path/to/pictures",
+        "payloadType": "str",
+        "x": 270,
+        "y": 780,
+        "wires": [
+            [
+                "3e922904.a1ccc6"
+            ]
+        ]
+    },
+    {
+        "id": "277cfa29.c665e6",
+        "type": "debug",
+        "z": "1c637b11.ff1e85",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload.path",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 870,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "4bad8845.2848a8",
+        "type": "join",
+        "z": "8e64a3bb.4204b",
+        "d": true,
+        "name": "Retry Download",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 180,
+        "y": 520,
+        "wires": [
+            [
+                "3c446bc8.21b804"
+            ]
+        ]
+    },
+    {
+        "id": "c1fd0144.15dab",
+        "type": "function",
+        "z": "8e64a3bb.4204b",
+        "d": true,
+        "name": "Set download path",
+        "func": "msg.payload.path = msg.payload['new-user'];\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 520,
+        "wires": [
+            [
+                "517a1b83.9f0884"
+            ]
+        ]
+    },
+    {
+        "id": "5c8ce22f.28c21c",
+        "type": "function",
+        "z": "1c637b11.ff1e85",
+        "name": "",
+        "func": "msg.payload.path = msg.payload['new-user'];\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 660,
+        "y": 800,
+        "wires": [
+            [
+                "277cfa29.c665e6"
+            ]
+        ]
+    },
+    {
+        "id": "4ebba64f.533ee8",
+        "type": "link out",
+        "z": "8e64a3bb.4204b",
+        "d": true,
+        "name": "Retry Download Out",
+        "links": [
+            "84929d92.45cf9"
+        ],
+        "x": 935,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "84929d92.45cf9",
+        "type": "link in",
+        "z": "8e64a3bb.4204b",
+        "d": true,
+        "name": "Retry Download In",
+        "links": [
+            "4ebba64f.533ee8"
+        ],
+        "x": 115,
+        "y": 520,
+        "wires": [
+            [
+                "4bad8845.2848a8"
+            ]
+        ]
+    },
+    {
+        "id": "517a1b83.9f0884",
+        "type": "link out",
+        "z": "8e64a3bb.4204b",
+        "d": true,
+        "name": "Retry Path Out",
+        "links": [
+            "73550724.45c298"
+        ],
+        "x": 675,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "73550724.45c298",
+        "type": "link in",
+        "z": "8e64a3bb.4204b",
+        "d": true,
+        "name": "Retry Path In",
+        "links": [
+            "517a1b83.9f0884"
+        ],
+        "x": 155,
+        "y": 160,
+        "wires": [
+            [
+                "b4218f19.a4841"
+            ]
+        ]
+    },
+    {
+        "id": "3c446bc8.21b804",
+        "type": "delay",
+        "z": "8e64a3bb.4204b",
+        "d": true,
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "15",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 380,
+        "y": 520,
+        "wires": [
+            [
+                "c1fd0144.15dab"
+            ]
+        ]
+    },
+    {
+        "id": "f2c1bf71.79b76",
+        "type": "comment",
+        "z": "8e64a3bb.4204b",
+        "name": "If some error occurs, the download is restarted in 15s",
+        "info": "",
+        "x": 890,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "c162d2f.388153",
+        "type": "comment",
+        "z": "8e64a3bb.4204b",
+        "name": "TODO: add maximum retry counter",
+        "info": "",
+        "x": 280,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "76a8c52d.1369ec",
+        "type": "inject",
+        "z": "ac604b1.64772b8",
+        "name": "Start Listening to Users Collection",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "payload.path",
+                "v": "",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{}",
+        "payloadType": "json",
+        "x": 240,
+        "y": 260,
+        "wires": [
+            [
+                "807902f6.97c2d"
+            ]
+        ]
+    },
+    {
+        "id": "807902f6.97c2d",
+        "type": "function",
+        "z": "ac604b1.64772b8",
+        "name": "On New User Stream",
+        "func": "const syscode = global.get('syscode');\nconst admin = global.get('firebase');\nconst firestore = admin.firestore();\n\nconst query = firestore\n                .collection('users')\n                .where('syscode', '==', syscode)\n                .where('isRegistered', '==', false)\n                .limit(1);\n\nfunction toKebabCase(name) {\n    return name.toLowerCase().replace(' ', '-');\n}\n\n// msg = {};\n// msg.payload = {};\n\nlet stream = query.onSnapshot(querySnapshot => {\n    querySnapshot.forEach(documentSnapshot => {\n        if (documentSnapshot.exists) {\n            msg.topic = \"new-user\";\n            msg.userId = documentSnapshot.id;\n            msg.userData = documentSnapshot.data();\n            msg.userName = toKebabCase(msg.userData.name);\n            msg.payload.path = `users-pictures/${msg.userId}/`;\n            node.send(msg);\n            // node.done();\n        } else {\n            node.error(\"Document snapshot does not exist\");\n        }\n    });\n}, err => {\n  node.error(`Encountered error: ${err}`);\n});\n\ncontext.set(\"newUserStream\", stream);\nreturn;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "// Code added here will be run when the\n// node is being stopped or re-deployed.\n\nlet stream = context.get(\"newUserStream\");\n\n// Remove this listener.\nstream();",
+        "libs": [],
+        "x": 560,
+        "y": 260,
+        "wires": [
+            [
+                "a34ea319.7e73c"
+            ]
+        ]
+    },
+    {
+        "id": "e6320367.cb938",
+        "type": "comment",
+        "z": "ac604b1.64772b8",
+        "name": "About inject new messages",
+        "info": "On every new message, the On Message state of the function node is activated and its code is executed.\n\nIn this case, it means that on every new message, another stream is created, i.e, more than one stream will listen to changes on the user's collection.\n\nThis is a bad thing. That's why the inject node should not be use more than once.\n\nFortunetly, we are unable tu inject messages within subflows.",
+        "x": 210,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "c58a2bd4.d9c778",
+        "type": "subflow:8e64a3bb.4204b",
+        "z": "cbe637b8.44a3c8",
+        "name": "",
+        "env": [],
+        "x": 430,
+        "y": 1260,
+        "wires": [
+            [
+                "eb3c9a05.4d97c8"
+            ]
+        ]
+    },
+    {
+        "id": "975884a3.467118",
+        "type": "subflow:ac604b1.64772b8",
+        "z": "cbe637b8.44a3c8",
+        "name": "",
+        "env": [],
+        "x": 190,
+        "y": 1260,
+        "wires": [
+            [
+                "c58a2bd4.d9c778"
+            ]
+        ]
+    },
+    {
+        "id": "d8f60fce.dd0b2",
+        "type": "exec",
+        "z": "1c637b11.ff1e85",
+        "command": "touch",
+        "addpay": "",
+        "append": "touche_file.py",
+        "useSpawn": "false",
+        "timer": "6",
+        "oldrc": false,
+        "name": "",
+        "x": 370,
+        "y": 900,
+        "wires": [
+            [],
+            [],
+            [
+                "2682e3fc.3698dc"
+            ]
+        ]
+    },
+    {
+        "id": "13a7e4a7.09df7b",
+        "type": "inject",
+        "z": "1c637b11.ff1e85",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 220,
+        "y": 900,
+        "wires": [
+            [
+                "d8f60fce.dd0b2"
+            ]
+        ]
+    },
+    {
+        "id": "e63b405a.ef61f",
+        "type": "debug",
+        "z": "1c637b11.ff1e85",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 730,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "2682e3fc.3698dc",
+        "type": "function",
+        "z": "1c637b11.ff1e85",
+        "name": "",
+        "func": "if (msg.payload.code == 0) {\n    msg.payload = \"OK\";\n} else {\n    msg.payload = \"ERROR\";\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 900,
+        "wires": [
+            [
+                "e63b405a.ef61f"
+            ]
+        ]
+    },
+    {
+        "id": "bb22bd46.916ac",
+        "type": "function",
+        "z": "cbe637b8.44a3c8",
+        "name": "Change isRegistered Status",
+        "func": "const admin = global.get('firebase');\nconst firestore = admin.firestore();\n\nconst userId = msg.userId;\nconst docRef = firestore.collection('users').doc(userId);\n\n// payload.payload because of joint output nodes\nif (msg.payload.payload.code == 0) {\n    docRef.update({isRegistered: true})\n        .then(res => {\n          node.warn(`isRegistered field successfully updated.`);\n        })\n        .catch(error => {\n            node.error(`Could not updated isRegistered field: ${error}`);\n        });\n} \n\nreturn;",
+        "outputs": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1000,
+        "y": 1260,
+        "wires": [],
+        "icon": "node-red-contrib-firebase-data/firebase.png"
+    },
+    {
+        "id": "a34ea319.7e73c",
+        "type": "debug",
+        "z": "ac604b1.64772b8",
+        "name": "New User Arrived",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 830,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "eb3c9a05.4d97c8",
+        "type": "join",
+        "z": "cbe637b8.44a3c8",
+        "name": "Wait Register Output",
+        "mode": "custom",
+        "build": "merged",
+        "property": "",
+        "propertyType": "full",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 700,
+        "y": 1260,
+        "wires": [
+            [
+                "bb22bd46.916ac"
+            ]
+        ]
+    },
+    {
+        "id": "ce97f295.bfb7b",
+        "type": "link out",
+        "z": "cbe637b8.44a3c8",
+        "name": "Trigger Door State Changes",
+        "links": [
+            "3ff83904.20b666"
+        ],
+        "x": 1280,
+        "y": 480,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "3ff83904.20b666",
+        "type": "link in",
+        "z": "cbe637b8.44a3c8",
+        "name": "Catch Door State Changes",
+        "links": [
+            "ce97f295.bfb7b",
+            "dad7944a.a667f8"
+        ],
+        "x": 230,
+        "y": 980,
+        "wires": [
+            [
+                "3a893a3d.f01656"
+            ]
+        ],
+        "l": true
+    },
+    {
+        "id": "3a893a3d.f01656",
+        "type": "function",
+        "z": "cbe637b8.44a3c8",
+        "name": "Update Door State",
+        "func": "const admin = global.get('firebase');\nconst firestore = admin.firestore();\n\nconst syscode = global.get('syscode');\nconst doorsQuery = firestore.collection('doors').where('syscode', '==', syscode);\n\n// Any state different from [Locked] means the door is opened\nlet isDoorOpened = msg.payload == 'Locked' ? false : true;\n\ndoorsQuery.get()\n    .then(querySnapshot => {\n      querySnapshot.forEach(documentSnapshot => {\n        documentSnapshot.ref.update({isOpened: isDoorOpened})\n            .then(res => {\n              node.warn(`isOpened field successfully updated to ${isDoorOpened}.`);\n            })\n            .catch(error => {\n                node.error(`Could not updated isOpened field: ${error}`);\n            });\n      })\n    })\n    .catch(error => {\n        node.error(`Door query error: ${error}`);\n    });\n\nreturn;",
+        "outputs": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 980,
+        "wires": [],
+        "icon": "node-red-contrib-firebase-data/firebase.png"
+    },
+    {
+        "id": "c8fc65c1.9bce88",
+        "type": "inject",
+        "z": "d687782a.a61bd8",
+        "name": "Start Listening to Actions Document",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "payload.path",
+                "v": "",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{}",
+        "payloadType": "json",
+        "x": 240,
+        "y": 260,
+        "wires": [
+            [
+                "6d3df336.6d6c1c"
+            ]
+        ]
+    },
+    {
+        "id": "6d3df336.6d6c1c",
+        "type": "function",
+        "z": "d687782a.a61bd8",
+        "name": "On User Action Stream",
+        "func": "const admin = global.get('firebase');\nconst firestore = admin.firestore();\nconst syscode = global.get('syscode');\n\nconst query = firestore\n                .collection('actions')\n                .where('syscode', '==', syscode);\n\nlet stream = query.onSnapshot(querySnapshot => {\n    querySnapshot.forEach(documentSnapshot => {\n        if (documentSnapshot.exists) {\n            msg.payload = documentSnapshot.data();\n            msg.action = msg.payload['action'];\n            msg.topic = `manual ${msg.action}`;\n            node.send(msg);\n            // node.done();\n        } else {\n            node.error(\"Document snapshot does not exist\");\n        }\n    });\n}, err => {\n  node.error(`Encountered error: ${err}`);\n});\n\ncontext.set(\"actionsStream\", stream);\nreturn;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "// Code added here will be run when the\n// node is being stopped or re-deployed.\n\nlet stream = context.get(\"actionsStream\");\n\n// Remove this listener.\nstream();",
+        "libs": [],
+        "x": 560,
+        "y": 260,
+        "wires": [
+            [
+                "ab95b919.a60b38",
+                "a3ee153b.0361b8"
+            ]
+        ]
+    },
+    {
+        "id": "4a0089e0.389b18",
+        "type": "comment",
+        "z": "d687782a.a61bd8",
+        "name": "About inject new messages",
+        "info": "On every new message, the On Message state of the function node is activated and its code is executed.\n\nIn this case, it means that on every new message, another stream is created, i.e, more than one stream will listen to changes on the user's collection.\n\nThis is a bad thing. That's why the inject node should not be use more than once.\n\nFortunetly, we are unable tu inject messages within subflows.",
+        "x": 210,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "ab95b919.a60b38",
+        "type": "debug",
+        "z": "d687782a.a61bd8",
+        "d": true,
+        "name": "New Action",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 810,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "d740d15f.6ea29",
+        "type": "subflow:d687782a.a61bd8",
+        "z": "cbe637b8.44a3c8",
+        "name": "",
+        "env": [],
+        "x": 140,
+        "y": 780,
+        "wires": [
+            [
+                "f2dad691.73e8b8"
+            ]
+        ]
+    },
+    {
+        "id": "a3d31dbd.8dc37",
+        "type": "subflow:209bbc8c.8ea884",
+        "z": "cbe637b8.44a3c8",
+        "name": "",
+        "env": [],
+        "x": 620,
+        "y": 680,
+        "wires": [
+            [
+                "590e727e.e7f5bc"
+            ]
+        ]
+    },
+    {
+        "id": "3608f8dc.6d66d8",
+        "type": "subflow:9cdfc198.abfa5",
+        "z": "cbe637b8.44a3c8",
+        "name": "",
+        "env": [],
+        "x": 620,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "4c7e5505.acecbc",
+        "type": "subflow:45583301.ed706c",
+        "z": "cbe637b8.44a3c8",
+        "name": "",
+        "x": 610,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "ed430b20.ac5368",
+        "type": "subflow:7dd49ccd.ac3464",
+        "z": "cbe637b8.44a3c8",
+        "name": "",
+        "x": 610,
+        "y": 860,
+        "wires": [
+            [
+                "3a893a3d.f01656"
+            ]
+        ]
+    },
+    {
+        "id": "f2dad691.73e8b8",
+        "type": "switch",
+        "z": "cbe637b8.44a3c8",
+        "name": "Switch Action",
+        "property": "action",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "ok",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "alarm",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "ignore",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 4,
+        "x": 370,
+        "y": 780,
+        "wires": [
+            [],
+            [
+                "3608f8dc.6d66d8",
+                "a3d31dbd.8dc37",
+                "4c7e5505.acecbc"
+            ],
+            [
+                "3608f8dc.6d66d8"
+            ],
+            [
+                "ed430b20.ac5368",
+                "3608f8dc.6d66d8",
+                "4c7e5505.acecbc"
+            ]
+        ]
+    },
+    {
+        "id": "9257082d.07c868",
+        "type": "function",
+        "z": "52572e6a.4d4a7",
+        "name": "Create",
+        "func": "const admin = global.get('firebase');\nconst firestore = admin.firestore();\n\nconst notification = msg.notification;\n\n// Reference to notifications collection\nconst notifCol = firestore.collection('notifications');\n\nnotifCol.add(notification)\n    .then(documentReference => {\n      node.warn(`Notification created successfully with ID ${documentReference.id}`);\n    })\n    .catch(err => {\n        node.error(`Could not create notification: ${err}`);\n    });\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1170,
+        "y": 240,
+        "wires": [
+            [
+                "2986c4b.49b183c"
+            ]
+        ]
+    },
+    {
+        "id": "88a29964.12a528",
+        "type": "switch",
+        "z": "52572e6a.4d4a7",
+        "name": "Switch Notification Type",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "not-recognized",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "x": 270,
+        "y": 280,
+        "wires": [
+            [
+                "b5848a35.262758"
+            ],
+            [
+                "74bdec16.b8b364"
+            ]
+        ]
+    },
+    {
+        "id": "b58965cb.ca10d8",
+        "type": "link in",
+        "z": "cbe637b8.44a3c8",
+        "name": "Catch Notification Creation",
+        "links": [
+            "7c5f6619.a82198"
+        ],
+        "x": 230,
+        "y": 1120,
+        "wires": [
+            [
+                "4bec5bef.e7e154"
+            ]
+        ],
+        "l": true
+    },
+    {
+        "id": "7c33fc03.b12d64",
+        "type": "comment",
+        "z": "52572e6a.4d4a7",
+        "name": "It could be about known or unknown people",
+        "info": "",
+        "x": 220,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "b5848a35.262758",
+        "type": "change",
+        "z": "52572e6a.4d4a7",
+        "name": "Unknown Person",
+        "rules": [
+            {
+                "t": "set",
+                "p": "notification",
+                "pt": "msg",
+                "to": "{\t    \"name\": \"Unknown person\",\t    \"recognized\": false,\t    \"picture\": $globalContext('pictureUrl'),\t    \"syscode\": $globalContext('syscode'),\t    \"datetime\": $millis(),\t    \"answer\": \"\",\t    \"answeredBy\": \"\",\t    \"indexedName\": [\t        \"u\",\t        \"un\",\t        \"unk\",\t        \"unkn\",\t        \"unkno\",\t        \"unknow\",\t        \"unknown\",\t        \"p\",\t        \"pe\",\t        \"per\",\t        \"pers\",\t        \"perso\",\t        \"person\"\t    ]\t}",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 530,
+        "y": 240,
+        "wires": [
+            [
+                "9257082d.07c868"
+            ]
+        ]
+    },
+    {
+        "id": "4bec5bef.e7e154",
+        "type": "subflow:52572e6a.4d4a7",
+        "z": "cbe637b8.44a3c8",
+        "name": "",
+        "env": [],
+        "x": 510,
+        "y": 1120,
+        "wires": []
+    },
+    {
+        "id": "b20e8180.8868a",
+        "type": "change",
+        "z": "52572e6a.4d4a7",
+        "name": "Known Person",
+        "rules": [
+            {
+                "t": "set",
+                "p": "notification",
+                "pt": "msg",
+                "to": "{\t    \"name\": msg.person,\t    \"recognized\": true,\t    \"picture\": $globalContext('pictureUrl'),\t    \"syscode\": $globalContext('syscode'),\t    \"datetime\": $millis(),\t    \"answer\": \"\",\t    \"answeredBy\": \"\",\t    \"indexedName\": [msg.indexedName]\t}",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 980,
+        "y": 320,
+        "wires": [
+            [
+                "9257082d.07c868"
+            ]
+        ]
+    },
+    {
+        "id": "74bdec16.b8b364",
+        "type": "function",
+        "z": "52572e6a.4d4a7",
+        "name": "Revert Kebab Case",
+        "func": "\nfunction revertKebabCase(kebab) {\n    // 'jennifer-garner' -> ['jennifer', 'garner']\n    let nameS = kebab.split('-');\n    \n    // ['Jennifer', 'garner']\n    nameS[0] = nameS[0][0].toUpperCase() + nameS[0].substring(1);\n    \n    // ['Jennifer', 'Garner']\n    nameS[1] = nameS[1][0].toUpperCase() + nameS[1].substring(1);\n    \n    // 'Jeniffer Garner'\n    return nameS.join(' ');    \n}\n\nmsg.person = revertKebabCase(msg.payload.person[0]);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 320,
+        "wires": [
+            [
+                "d4e89dde.0e412"
+            ]
+        ]
+    },
+    {
+        "id": "9fdf8f19.4995d",
+        "type": "function",
+        "z": "9cdfc198.abfa5",
+        "name": "Revert Kebab Case",
+        "func": "\nfunction revertKebabCase(kebab) {\n    // 'jennifer-garner' -> ['jennifer', 'garner']\n    let nameS = kebab.split('-');\n    \n    // ['Jennifer', 'garner']\n    nameS[0] = nameS[0][0].toUpperCase() + nameS[0].substring(1);\n    \n    // ['Jennifer', 'Garner']\n    nameS[1] = nameS[1][0].toUpperCase() + nameS[1].substring(1);\n    \n    // 'Jeniffer Garner'\n    return nameS.join(' ');    \n}\n\nif (msg.topic == 'no-face') {\n    msg.person = \"Unknown person\"\n} else if (msg.topic == 'processing' || msg.topic == 'face-detected') {\n    // When the button is pressed, the display must give a feedback\n    msg.person = undefined;\n} else if (msg.topic != 'not-recognized' && msg.action == undefined) {\n    msg.person = revertKebabCase(msg.payload.person[0]);\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 210,
+        "y": 300,
+        "wires": [
+            [
+                "4f4db8de.4273e8"
+            ]
+        ]
+    },
+    {
+        "id": "259848c3.984d78",
+        "type": "function",
+        "z": "d687782a.a61bd8",
+        "name": "Is Action Still Valid",
+        "func": "\nconst actionTime = msg.payload.updateTime;\nconst systemTime = Date.now();\n\n// Calculate the different between times in miliseconds\nconst msDiff = Math.abs(systemTime - actionTime);\n// Convert the difference to seconds\nconst secondsDiff = Math.round(msDiff / 1000);\n\n// If true, the action is not valid hence the function has no return\nif (secondsDiff > 10) {\n    node.warn(`The action *${msg.action}* is not valid anymore`);\n    return;\n}\n\nnode.warn(`New action: *${msg.action}*`);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1030,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8082a9a4.123a78",
+        "type": "inject",
+        "z": "1c637b11.ff1e85",
+        "name": "Some Names",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "indexedName",
+                "v": "",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Unknown person",
+        "payloadType": "str",
+        "x": 230,
+        "y": 960,
+        "wires": [
+            [
+                "d53947a1.913008"
+            ]
+        ]
+    },
+    {
+        "id": "d53947a1.913008",
+        "type": "function",
+        "z": "1c637b11.ff1e85",
+        "name": "Name Indexer",
+        "func": "const fullName = msg.payload;\nconst splitList = fullName.split(\" \");\nlet indexList = [];\n\nfor (let i = 0; i < splitList.length; i++) {\n    for (let j = 0; j < splitList[i].length + 1; j++) {\n      indexList.push(splitList[i].substring(0,j).toLowerCase());\n    }\n}\n\nmsg.indexedName = indexList.filter(function(item, _, __) {\n    return item != \"\";\n});\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 960,
+        "wires": [
+            [
+                "e64bcae2.d4d968"
+            ]
+        ]
+    },
+    {
+        "id": "e64bcae2.d4d968",
+        "type": "debug",
+        "z": "1c637b11.ff1e85",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "indexedName",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 670,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "d4e89dde.0e412",
+        "type": "function",
+        "z": "52572e6a.4d4a7",
+        "name": "Name Indexer",
+        "func": "const fullName = msg.person;\nconst splitList = fullName.split(\" \");\nlet indexList = [];\n\nfor (let i = 0; i < splitList.length; i++) {\n    for (let j = 0; j < splitList[i].length + 1; j++) {\n      indexList.push(splitList[i].substring(0,j).toLowerCase());\n    }\n}\n\nmsg.indexedName = indexList.filter(function(item, _, __) {\n    return item != \"\";\n});\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 760,
+        "y": 320,
+        "wires": [
+            [
+                "b20e8180.8868a"
+            ]
+        ]
+    },
+    {
+        "id": "3adc395e.601f26",
+        "type": "function",
+        "z": "1c637b11.ff1e85",
+        "name": "Get Signed URL",
+        "func": "const admin = global.get('firebase')\nconst myBucket = admin.storage().bucket('widget-design-tests.appspot.com');\nconst file = myBucket.file('captures/pic_1637714_327924.jpg');\n\n//-\n// Generate a URL that allows temporary access to download your file.\n//-\n\nconst config = {\n  action: 'read',\n  expires: '03-17-2025',\n};\n\nfile.getSignedUrl(config, function(err, url) {\n    if (err) {\n        console.error(err);\n        return;\n    }\n    msg.url = url;\n});\n\nreturn msg;\n ",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 1020,
+        "wires": [
+            [
+                "e64bcae2.d4d968"
+            ]
+        ]
+    },
+    {
+        "id": "630752e6.00090c",
+        "type": "inject",
+        "z": "1c637b11.ff1e85",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 220,
+        "y": 1020,
+        "wires": [
+            [
+                "3adc395e.601f26"
+            ]
+        ]
+    },
+    {
+        "id": "cfb0b99f.a30398",
+        "type": "subflow:2c5ffaaa.012716",
+        "z": "cbe637b8.44a3c8",
+        "name": "",
+        "env": [],
+        "x": 1110,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "dcf5f2ba.f7945",
+        "type": "function",
+        "z": "2c5ffaaa.012716",
+        "name": "Upload Capture",
+        "func": "const admin = global.get('firebase')\nconst defaultBucket = global.get('defaultBucket');\n\nconst myBucket = admin.storage().bucket(defaultBucket);\n\nconst filepath = msg.payload;\nconst options = {\n  destination: `captures/${msg.filename}`,\n  resumable: true,\n  validation: 'crc32c',\n  metadata: {\n    metadata: {\n      event: 'Image captured using a raspberry pi camera.'\n    }\n  }\n};\n\n//-\n// Upload a file from a local path.\n//-\nmyBucket.upload(filepath, options, function(err, file) {\n    if (err) {\n        node.warn(`An error occurred during picture uploading: ${err}`);\n        return;\n    }\n    \n    msg.payload = file;\n    msg.filepath = `${defaultBucket}/captures/`;\n    node.warn(`Upload completed. File located at captures/${msg.filename}`);\n    node.send(msg);\n});\n\ndelete msg.filemode;\n\n//! the below line is executed before the previous ASYNC method completes\n// return msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 280,
+        "y": 220,
+        "wires": [
+            [
+                "697abb0e.995584"
+            ]
+        ]
+    },
+    {
+        "id": "697abb0e.995584",
+        "type": "function",
+        "z": "2c5ffaaa.012716",
+        "name": "Get Signed URL",
+        "func": "const admin = global.get('firebase')\nconst defaultBucket = global.get('defaultBucket');\n\nconst myBucket = admin.storage().bucket(defaultBucket);\nconst file = myBucket.file(`captures/${msg.filename}`);\n\n//-\n// Generate a URL that allows temporary access to download your file.\n//-\nconst config = {\n  action: 'read',\n  expires: '12-07-2022',\n};\n\nfile.getSignedUrl(config, function(err, url) {\n    if (err) {\n        node.error(`Could not get signed URL: ${err}`);\n        return;\n    }\n    msg.url = url;\n    global.set('pictureUrl', url);\n    node.warn('Signed URL successfully created.');\n    // node.send(msg);\n    node.done();\n});\n ",
+        "outputs": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "2986c4b.49b183c",
+        "type": "debug",
+        "z": "52572e6a.4d4a7",
+        "d": true,
+        "name": "Notification Debug",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1370,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "590e727e.e7f5bc",
+        "type": "function",
+        "z": "cbe637b8.44a3c8",
+        "name": "Update Siren State",
+        "func": "const sirenState = msg.payload.trim();\n\nif (sirenState == 'Off') {\n    const admin = global.get('firebase');\n    const firestore = admin.firestore();\n    \n    const syscode = global.get('syscode');\n    const doorsQuery = firestore.collection('doors').where('syscode', '==', syscode);\n    \n    doorsQuery.get()\n        .then(querySnapshot => {\n          querySnapshot.forEach(documentSnapshot => {\n            documentSnapshot.ref.update({isSirenOn: false})\n                .then(res => {\n                  node.warn(`isSirenOn field successfully updated to false.`);\n                })\n                .catch(error => {\n                    node.error(`Could not updated isSirenOn field: ${error}`);\n                });\n          })\n        })\n        .catch(error => {\n            node.error(`Door query error: ${error}`);\n        });\n        \n    return;\n} else {\n    return;\n}",
+        "outputs": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 850,
+        "y": 780,
+        "wires": [],
+        "icon": "node-red-contrib-firebase-data/firebase.png"
+    },
+    {
+        "id": "ec45e070.75b64",
+        "type": "link out",
+        "z": "cbe637b8.44a3c8",
+        "name": "Processing Out",
+        "links": [
+            "7c2630fb.f781d"
+        ],
+        "x": 195,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "7c2630fb.f781d",
+        "type": "link in",
+        "z": "cbe637b8.44a3c8",
+        "name": "Processing In",
+        "links": [
+            "ec45e070.75b64"
+        ],
+        "x": 935,
+        "y": 300,
+        "wires": [
+            [
+                "461b8f78.7d478"
+            ]
+        ]
+    },
+    {
+        "id": "b14dba75.3c5088",
+        "type": "comment",
+        "z": "cbe637b8.44a3c8",
+        "name": "Action lifetime",
+        "info": "How to avoid get one new action on each new deploy?\n\nI have inserted an \"updateTime\" property to the\ndocument.\n\nIf the updateTime compared to the system time at\nthe arrived moment is greater than 10 seconds,\nso the action is not valid anymore.",
+        "x": 90,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "9a5d7198.2f918",
+        "type": "comment",
+        "z": "cbe637b8.44a3c8",
+        "name": "Actions Set",
+        "info": "Alarm\nIgnore\nOpen/Close",
+        "x": 310,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "eb740d7b.abd1f",
+        "type": "comment",
+        "z": "cbe637b8.44a3c8",
+        "name": "About Notifications Answer",
+        "info": "The notification document has its own \"answer\"\nproperty. But, this answer has no use here (embedded system), it is for the app information only.\n\nEvery time a user asnwers a notification, the answer\nproperty is set as well as the \"action\" property in Action document, which value is responsible to apply changes to embbeded system.",
+        "x": 530,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "113041af.82fdee",
+        "type": "image viewer",
+        "z": "cbe637b8.44a3c8",
+        "name": "Detected Face Preview",
+        "width": "120",
+        "data": "payload",
+        "dataType": "msg",
+        "active": true,
+        "x": 210,
+        "y": 540,
+        "wires": [
+            [
+                "4ab83bdc.74c454"
+            ]
+        ]
+    },
+    {
+        "id": "b80e0291.110b7",
+        "type": "function",
+        "z": "2380a993.5b5d86",
+        "name": "Set Script Arguments",
+        "func": "\nconst rootPath = global.get('rootPath');\nconst scriptPath = rootPath + 'scripts/encode_face.py';\n\nmsg.payload = scriptPath + ` --dataset ${msg.payload} --name ${msg.userName}`;\n\n// Trigger the join node as soon as this subflow outputs\nmsg.complete = \"\";\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 260,
+        "y": 220,
+        "wires": [
+            [
+                "1c17cb85.9aab84"
+            ]
+        ]
+    },
+    {
+        "id": "1c17cb85.9aab84",
+        "type": "exec",
+        "z": "2380a993.5b5d86",
+        "command": "python3",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "true",
+        "timer": "30",
+        "oldrc": false,
+        "name": "Encode Faces Script",
+        "x": 520,
+        "y": 220,
+        "wires": [
+            [
+                "88aa80f5.5f4ae"
+            ],
+            [
+                "eecec895.bfd848"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "eecec895.bfd848",
+        "type": "debug",
+        "z": "2380a993.5b5d86",
+        "name": "Encode Error",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 750,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "88aa80f5.5f4ae",
+        "type": "debug",
+        "z": "2380a993.5b5d86",
+        "name": "Encode Output",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 760,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "c61294cf.9c9068",
+        "type": "subflow:2380a993.5b5d86",
+        "z": "8e64a3bb.4204b",
+        "name": "",
+        "x": 950,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2085eddc.09d522",
+        "type": "storage-read",
+        "z": "9c39f8bd.2f45b8",
+        "name": "",
+        "path": "",
+        "bucket": "",
+        "cred": "426edb53.067234",
+        "x": 250,
+        "y": 260,
+        "wires": [
+            [
+                "31bb9eb5.3086f2"
+            ]
+        ]
+    },
+    {
+        "id": "678a5b37.c2aa64",
+        "type": "storage-list",
+        "z": "9c39f8bd.2f45b8",
+        "name": "",
+        "path": "",
+        "bucket": "",
+        "cred": "426edb53.067234",
+        "delimiter": "/",
+        "x": 250,
+        "y": 200,
+        "wires": [
+            [
+                "2085eddc.09d522",
+                "d2cc44cc.731428"
+            ]
+        ]
+    },
+    {
+        "id": "fc9d7577.292288",
+        "type": "comment",
+        "z": "9c39f8bd.2f45b8",
+        "name": "Download the images from Firebase Storage",
+        "info": "",
+        "x": 350,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "d2cc44cc.731428",
+        "type": "change",
+        "z": "9c39f8bd.2f45b8",
+        "name": "Download Status 1",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "[STORAGE] Pictures download in progress...",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 470,
+        "y": 200,
+        "wires": [
+            [
+                "2d1d0bab.26e2e4"
+            ]
+        ]
+    },
+    {
+        "id": "2d1d0bab.26e2e4",
+        "type": "debug",
+        "z": "9c39f8bd.2f45b8",
+        "name": "Download Feedback 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "b4218f19.a4841",
+        "type": "subflow:9c39f8bd.2f45b8",
+        "z": "8e64a3bb.4204b",
+        "name": "",
+        "env": [],
+        "x": 260,
+        "y": 220,
+        "wires": [
+            [
+                "66fb8569.f38dbc"
+            ]
+        ]
+    },
+    {
+        "id": "addda721.2b34f8",
+        "type": "function",
+        "z": "341fa824.c7c4d8",
+        "name": "Generate Picture Name",
+        "func": "let ts = new Date().getTime().toString();\nlet filename = `pic_${ts.substring(0,7)}_${ts.substring(7)}.jpg`;\n\n// trim to remove the new line character at the end\nmsg.filename = filename.trim();\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 260,
+        "wires": [
+            [
+                "d6b6017a.5b5e2"
+            ]
+        ]
+    },
+    {
+        "id": "d6b6017a.5b5e2",
+        "type": "function",
+        "z": "341fa824.c7c4d8",
+        "name": "Copy Picture to Captures Directory",
+        "func": "const rootPath = global.get('rootPath')\nconst mimicPath = path.join(msg.path, msg.name)\nconst capturesDirectory = path.join(rootPath, 'captures', msg.filename)\n\ntry {\n  fs.copyFileSync(mimicPath, capturesDirectory)\n  node.warn(\"Successfully copied and moved the file to captures directory.\")\n} catch(err) {\n  node.error(err)\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "fs",
+                "module": "fs"
+            },
+            {
+                "var": "path",
+                "module": "path"
+            }
+        ],
+        "x": 620,
+        "y": 260,
+        "wires": [
+            [
+                "30b0d7f7.84d058"
+            ]
+        ]
+    },
+    {
+        "id": "422964fb.57f25c",
+        "type": "subflow:341fa824.c7c4d8",
+        "z": "cbe637b8.44a3c8",
+        "name": "",
+        "env": [],
+        "x": 140,
+        "y": 300,
+        "wires": [
+            [
+                "f6d3029c.99dff"
+            ]
+        ]
+    },
+    {
+        "id": "30b0d7f7.84d058",
+        "type": "function",
+        "z": "341fa824.c7c4d8",
+        "name": "Delete Message Properties",
+        "func": "// Those properties are no needed from this point forward\ndelete msg.filepath;\ndelete msg.filemode;\ndelete msg.fileFormat;\ndelete msg.rc;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 780,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "65750566.93320c",
+        "type": "inject",
+        "z": "1c637b11.ff1e85",
+        "name": "Jim Halpert",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "path",
+                "v": "/home/pi/Pictures/",
+                "vt": "str"
+            },
+            {
+                "p": "name",
+                "v": "jim-halpert-1.png",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 1010,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3a4665c4.eab7ba",
+        "type": "inject",
+        "z": "1c637b11.ff1e85",
+        "name": "Michael Scott",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "path",
+                "v": "/home/pi/Pictures/",
+                "vt": "str"
+            },
+            {
+                "p": "name",
+                "v": "michael-scott-1.png",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 1010,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9d722ae.bf040d8",
+        "type": "inject",
+        "z": "1c637b11.ff1e85",
+        "name": "Matt Damon",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "path",
+                "v": "/home/pi/Downloads/",
+                "vt": "str"
+            },
+            {
+                "p": "name",
+                "v": "matt-damon.jpeg",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 1010,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "13ac4a2d.ebb5e6",
+        "type": "change",
+        "z": "8e64a3bb.4204b",
+        "name": "Write Status",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "[SYSTEM] Writing pictures in disk.",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 770,
+        "y": 280,
+        "wires": [
+            [
+                "ff061856.57d9b8"
+            ]
+        ]
+    },
+    {
+        "id": "ff061856.57d9b8",
+        "type": "debug",
+        "z": "8e64a3bb.4204b",
+        "name": "WriteFeedback",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 980,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "31bb9eb5.3086f2",
+        "type": "change",
+        "z": "9c39f8bd.2f45b8",
+        "name": "Download Status 2",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "[STORAGE] Download completed.",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 470,
+        "y": 260,
+        "wires": [
+            [
+                "372c4739.3fce18"
+            ]
+        ]
+    },
+    {
+        "id": "372c4739.3fce18",
+        "type": "debug",
+        "z": "9c39f8bd.2f45b8",
+        "name": "Download Feedback 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "bf18ca5.71b6038",
+        "type": "change",
+        "z": "60cb58a4.dd0b28",
+        "name": "Detect Status",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "[SYSTEM] Detecting faces.",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 340,
+        "y": 160,
+        "wires": [
+            [
+                "bb0dcbbb.c3e1c8"
+            ]
+        ]
+    },
+    {
+        "id": "bb0dcbbb.c3e1c8",
+        "type": "debug",
+        "z": "60cb58a4.dd0b28",
+        "name": "Detect Feedback",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 570,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "a3ee153b.0361b8",
+        "type": "trigger",
+        "z": "d687782a.a61bd8",
+        "name": "",
+        "op1": "",
+        "op2": "",
+        "op1type": "pay",
+        "op2type": "nul",
+        "duration": "2",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "s",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 800,
+        "y": 200,
+        "wires": [
+            [
+                "259848c3.984d78"
+            ]
+        ]
+    },
+    {
+        "id": "d58108c.85e4bf8",
+        "type": "comment",
+        "z": "d687782a.a61bd8",
+        "name": "Series of repeatable actions issue",
+        "info": "Quando o aplicativo responde a notificação pela barra, ao usar o botão ignore, a mesma ação é repetida várias vezes em um curto período de tempo.\n\nEsse nó trigger deixa passar apenas uma delas.",
+        "x": 870,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "948dec68.c5586",
+        "type": "inject",
+        "z": "cbe637b8.44a3c8",
+        "name": "PicSel Params",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "dir",
+                "v": "/home/pi/ead_tests/the_plus_four/",
+                "vt": "str"
+            },
+            {
+                "p": "folder",
+                "v": "davi_delonge/",
+                "vt": "str"
+            },
+            {
+                "p": "ext",
+                "v": "jpeg",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 140,
+        "y": 420,
+        "wires": [
+            [
+                "22d981d5.a01f7e"
+            ]
+        ]
+    },
+    {
+        "id": "cd4d6342.28397",
+        "type": "inject",
+        "z": "1c637b11.ff1e85",
+        "name": "Picture Selector 5",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "path",
+                "v": "/home/pi/ead_tests/mister_george/",
+                "vt": "str"
+            },
+            {
+                "p": "name",
+                "v": "5.jpg",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 1030,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "23077362.72bd2c",
+        "type": "inject",
+        "z": "1c637b11.ff1e85",
+        "name": "Picture Selector 6",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "path",
+                "v": "/home/pi/ead_tests/mister_george/",
+                "vt": "str"
+            },
+            {
+                "p": "name",
+                "v": "6.jpg",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 1030,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7106ab3f.2891b4",
+        "type": "inject",
+        "z": "1c637b11.ff1e85",
+        "name": "Picture Selector 7",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "path",
+                "v": "/home/pi/ead_tests/mister_george/",
+                "vt": "str"
+            },
+            {
+                "p": "name",
+                "v": "7.jpg",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 1030,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "46edaad.d9e8f54",
+        "type": "inject",
+        "z": "1c637b11.ff1e85",
+        "name": "Picture Selector 8",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "path",
+                "v": "/home/pi/ead_tests/mister_george/",
+                "vt": "str"
+            },
+            {
+                "p": "name",
+                "v": "8.jpg",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 1030,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4d147e71.ab562",
+        "type": "inject",
+        "z": "1c637b11.ff1e85",
+        "name": "Picture Selector 9",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "path",
+                "v": "/home/pi/ead_tests/mister_george/",
+                "vt": "str"
+            },
+            {
+                "p": "name",
+                "v": "9.jpg",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 1030,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8f728d8c.80a96",
+        "type": "inject",
+        "z": "1c637b11.ff1e85",
+        "name": "Picture Selector 1",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "path",
+                "v": "/home/pi/ead_tests/mister_george/",
+                "vt": "str"
+            },
+            {
+                "p": "name",
+                "v": "1.jpg",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 1030,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a04e3c12.3080c",
+        "type": "inject",
+        "z": "1c637b11.ff1e85",
+        "name": "Picture Selector 2",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "path",
+                "v": "/home/pi/ead_tests/mister_george/",
+                "vt": "str"
+            },
+            {
+                "p": "name",
+                "v": "2.jpg",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 1030,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ce44490c.d9be98",
+        "type": "inject",
+        "z": "1c637b11.ff1e85",
+        "name": "Picture Selector 3",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "path",
+                "v": "/home/pi/ead_tests/mister_george/",
+                "vt": "str"
+            },
+            {
+                "p": "name",
+                "v": "3.jpg",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 1030,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e9ece70f.e35d58",
+        "type": "inject",
+        "z": "1c637b11.ff1e85",
+        "name": "Picture Selector 4",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "path",
+                "v": "/home/pi/ead_tests/mister_george/",
+                "vt": "str"
+            },
+            {
+                "p": "name",
+                "v": "4.jpg",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 1030,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "22d981d5.a01f7e",
+        "type": "function",
+        "z": "cbe637b8.44a3c8",
+        "name": "Picture Selector",
+        "func": "let counter = context.get('counter', 0);\n\nconst path = `${msg.dir}${msg.folder}`\nconst name = `${counter}.${msg.ext}`\n\nmsg.path = path;\nmsg.name = name;\n\nif (counter > 9) {\n    return null;\n} else {\n    counter += 1;\n    context.set('counter', counter);\n    return msg;\n}\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\ncontext.set('counter', 0);",
+        "finalize": "",
+        "libs": [],
+        "x": 140,
+        "y": 360,
+        "wires": [
+            [
+                "422964fb.57f25c"
+            ]
+        ]
+    }
+]

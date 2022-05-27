@@ -1,0 +1,20 @@
+*.backup
+
+# images
+captures/*
+processed-captures/*
+pictures/*
+processed-pictures/*
+
+# config files
+flow_cred.json
+service_account.json
+
+# miscellenious
+scripts/__pycache__
+
+# ignore ignored
+!captures/.gitkeep
+!processed-captures/.gitkeep
+!pictures/.gitkeep
+!processed-pictures/.gitkeep
