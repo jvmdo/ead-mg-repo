@@ -1,17 +1,15 @@
-# Repositório do protótipo EAD
+# Electronic Artificial Doorkeeper App Flutter Project
 
-Repositório com documentação, projetos e códigos do sistema descrito na monografia entitulada
-"Porteiro eletrônico inteligente para residências: um sistema com reconhecimento facial e acesso remoto por aplicativo móvel conectado à nuvem."
+Esse repositório contém todo o projeto Flutter do aplicativo EAD.
 
+Devido ao curto período que tive para escrever os códigos, preferi não atualizar os pacotes
+conforme novas versões eram lançadas. Portanto, a versão em que tudo funciona é **Flutter 2.5.0** stable.
 
-## Como acessar
+Os scripts das *functions* que rodam no Firebase estão no diretório ```/functions```.
 
-Para simplificar, decidi colocar as 3 divisões do sistema em branches diferentes:
-  - *main* contém a documentação; 
-  - *app* contém o projeto Flutter e códigos do aplicativo;
-  - *hardware* contém o projeto Node-RED do programa embarcado e scripts dos submódulos.
+Para rodar o aplicativo com o backend, você deve conectá-lo ao seu próprio projeto no Firebase. A documentação é o suficiente para entender como os serviços foram utilizados.
 
 
-## Links externos
+## Getting Started
 
-[Link para o projeto Figma UI/UX do aplicativo](https://www.figma.com/file/BIUyAsGJzOzUYHVi0w3hX2/EAD-App---Design-%26-Wireframe?node-id=0%3A1)
+Após clonar o repositório, faça um ```flutter pub get```, adicione o seu google-services.json e execute como qualquer outro projeto Flutter.
